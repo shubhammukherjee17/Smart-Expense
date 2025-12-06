@@ -54,9 +54,33 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition"
               >
-                <span>𝕏 (Twitter)</span>
+                <span>𝕏 Twitter</span>
               </a>
-              <p className="text-sm text-slate-400">
+              <a
+                href="https://github.com/shubhammukherjee17"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition block"
+              >
+                <span>🐙 GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/theshubhammukherjee/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition block"
+              >
+                <span>💼 LinkedIn</span>
+              </a>
+              <a
+                href="https://www.instagram.com/unbesiegbar_shubham/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition block"
+              >
+                <span>📸 Instagram</span>
+              </a>
+              <p className="text-sm text-slate-400 pt-2">
                 Follow for updates and insights
               </p>
             </div>
