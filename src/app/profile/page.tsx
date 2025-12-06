@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -43,13 +44,13 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-12">
-      <div className="max-w-2xl mx-auto px-4">
-        <div className="mb-8">
-          <h2 className="text-3xl font-bold text-slate-900">My Profile</h2>
-          <p className="text-slate-600 mt-1">Customize your profile and preferences</p>
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-8 sm:py-12">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">My Profile</h2>
+          <p className="text-slate-600 mt-1 text-sm sm:text-base">Customize your profile and preferences</p>
         </div>
-        <div className="bg-white rounded-lg shadow-sm border border-slate-100 p-8 space-y-6">
+        <div className="bg-white rounded-lg shadow-sm border border-slate-100 p-4 sm:p-8 space-y-6">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">Display name</label>
             <input

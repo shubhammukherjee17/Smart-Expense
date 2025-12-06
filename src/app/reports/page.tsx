@@ -37,18 +37,18 @@ export default function Reports() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 py-6 sm:py-8">
+      <div className="max-w-7xl mx-auto px-4 py-6 sm:py-8">
         {/* Page Header */}
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Reports & Analytics</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">Reports & Analytics</h1>
 
         {groups.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-gray-600 mb-4">No groups yet. Create a group to see reports.</p>
+            <p className="text-gray-600 mb-4 text-sm sm:text-base">No groups yet. Create a group to see reports.</p>
           </div>
         ) : (
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Group Selector */}
-            <div className="bg-white rounded-lg border border-gray-200 p-4">
+            <div className="bg-white rounded-lg border border-gray-200 p-4 sm:p-6">
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Select Group
               </label>
@@ -58,7 +58,7 @@ export default function Reports() {
                   const groupId = e.target.value;
                   if (groupId) setCurrentGroup(groupId);
                 }}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base"
               >
                 <option value="">Choose a group...</option>
                 {groups.map((group) => (
@@ -72,7 +72,7 @@ export default function Reports() {
             {currentGroup && (
               <>
                 {/* Summary Cards */}
-                <div className="grid md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   <div className="bg-white rounded-lg border border-gray-200 p-6">
                     <p className="text-sm text-gray-600">Total Expenses</p>
                     <p className="text-3xl font-bold text-gray-900 mt-2">
