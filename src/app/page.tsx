@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import GetStartedCTA from '@/components/GetStartedCTA';
 
 export const metadata: Metadata = {
   title: 'Home | SplitWise',
@@ -11,21 +12,9 @@ export default function Home() {
       <section className="pt-12 sm:pt-20 pb-12 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6">
-            <div className="flex justify-center">
-              <span className="text-6xl sm:text-8xl">💰</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900">
-              Split Expenses <span className="text-blue-600">Effortlessly</span>
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-              Stop worrying about who owes what. Automatically categorize expenses, split intelligently, and settle payments with your friends and roommates.
-            </p>
-            <a
-              href="/groups"
-              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
-            >
-              Get Started
-            </a>
++            <GetStartedCTA />
+            {/* GetStartedCTA is a client component that opens a modal to pick Personal or Group flow */}
+            <div id="hero-placeholder" />
           </div>
         </div>
       </section>

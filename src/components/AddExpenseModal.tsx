@@ -35,8 +35,8 @@ export function AddExpenseModal({ isOpen, onClose }: AddExpenseModalProps) {
     }
 
     const selectedMembers = Object.entries(splits)
-      .filter(([_, selected]) => selected)
-      .map(([memberId, _]) => memberId);
+      .filter(([, selected]) => selected)
+      .map(([memberId]) => memberId);
 
     if (selectedMembers.length === 0) {
       alert('Select at least one person to split with');

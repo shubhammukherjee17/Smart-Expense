@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ExpenseProvider } from '@/context/ExpenseContext';
 import { Navbar } from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -18,7 +19,8 @@ export default function RootLayout({
       <body className="bg-gray-50">
         <ExpenseProvider>
           <Navbar />
-          {children}
+          <main className="min-h-[60vh]">{children}</main>
+          <Footer />
         </ExpenseProvider>
       </body>
     </html>

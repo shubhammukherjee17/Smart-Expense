@@ -117,7 +117,7 @@ export function CreateGroupModal({ isOpen, onClose }: CreateGroupModalProps) {
               Members
             </label>
             <div className="space-y-2 max-h-56 overflow-y-auto border border-gray-200 rounded-lg p-3">
-              {members.map((member, idx) => (
+              {members.map((member) => (
                 <div key={member.id} className="flex gap-2">
                   <div className="flex-1">
                     <input
