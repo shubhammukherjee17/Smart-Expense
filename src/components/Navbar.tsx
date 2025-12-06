@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -67,9 +68,16 @@ export function Navbar() {
                 aria-label="Open profile menu"
               >
                 {profileMeta?.avatar ? (
-                  <img src={profileMeta.avatar} alt={profileMeta.name} className="w-8 h-8 rounded-full object-cover" />
+                  <Image
+                    src={profileMeta.avatar}
+                    alt={profileMeta.name}
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 rounded-full object-cover"
+                    unoptimized
+                  />
                 ) : (
-                  <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-sm text-slate-700">
+                  <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-sm text-white font-semibold">
                     {profileMeta?.name ? profileMeta.name.charAt(0).toUpperCase() : 'N'}
                   </div>
                 )}
